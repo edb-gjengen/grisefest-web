@@ -1,65 +1,118 @@
+/* Variables */
+@stickyFooterHeight: 68px;
 
 /* ==========================================================================
    Base
    ========================================================================== */
+html,
+body {
+    height: 100%;
+}
 
-body { }
+body {
+    line-height: 1.6;
+}
 
+#content {
+}
+#nav-front-huge {
+    height: 275px;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    font-size: 38.5px;
+    font-weight: bold;
 
+    ul {
+        height: 100%;
+        list-style: none;
 
-/* =============================================================================
-   Header
-   ========================================================================== */
+        .menu-om-grisefesten {
+            &:hover {
+                background-color: #0093DD;
+            }
+        }
+        .menu-kjop-billetter {
+            &:hover {
+                background-color: #EB2C8F;
+            }
+        }
+        .menu-historie {
+            &:hover {
+                background-color: yellow;
+            }
+        }
 
-#banner { }
+        li {
+            background-color: white;
+            display: inline-block;
+            margin-left: 4px;
+            height: 275px;
+            width: 225px;
+            opacity: 0.7;
+            line-height: 40px;
+            border-bottom: 10px solid grey;
 
-/* Fixed Topbar Navigation */
-body.top-navbar { padding-top: 60px; }
-body.admin-bar .navbar-fixed-top { top: 28px; }
+            &:hover {
+                opacity: 0.8;
+                -webkit-transform: scale(1.1);
+            }
 
+            a { 
+                color: black;
+                display:block;
+                height: 100%;
+                width: 100%;
+                text-align: center;
+                span {
+                    display: inline-block;
+                    padding-top: 50%;
 
+                }
 
-/* ==========================================================================
-   Content
-   ========================================================================== */
+                &:hover {
+                    text-decoration: none;
 
-#content { }
+                }
+            }
 
+        }
+    }
 
+}
 
-/* ==========================================================================
-   Primary Content
-   ========================================================================== */
+#content-info {
+    p {
+        display: inline-block;
+    }
 
-#main { }
+    #nav-footer {
+        padding-top: @stickyFooterHeight/2;
+        display: inline-block;
 
+        ul {
+            list-style: none;
 
+            li {
+                padding-left: 4px;
+                display: inline-block;
+            }
+        }
+    }
+}
 
-/* ==========================================================================
-   Sidebar
-   ========================================================================== */
-
-#sidebar { }
-
-
-
-/* ==========================================================================
-   Posts
-   ========================================================================== */
-
-.hentry header { }
-.hentry time { }
-.hentry p.byline { }
-.hentry .entry-content { }
-.hentry footer { }
-
-
-
-/* ==========================================================================
-   Footer
-   ========================================================================== */
-
-#content-info { }
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* Negative indent footer by it's height */
+    margin: 0 auto -@stickyFooterHeight;
+    /* TODO background */
+}
+#push,
+#content-info {
+    height: @stickyFooterHeight;
+}
 
 
 

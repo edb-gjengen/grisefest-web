@@ -1,31 +1,91 @@
+/* Variables */
 /* ==========================================================================
    Base
    ========================================================================== */
-/* =============================================================================
-   Header
-   ========================================================================== */
-/* Fixed Topbar Navigation */
-body.top-navbar {
-  padding-top: 60px;
+html,
+body {
+  height: 100%;
 }
-body.admin-bar .navbar-fixed-top {
-  top: 28px;
+body {
+  line-height: 1.6;
 }
-/* ==========================================================================
-   Content
-   ========================================================================== */
-/* ==========================================================================
-   Primary Content
-   ========================================================================== */
-/* ==========================================================================
-   Sidebar
-   ========================================================================== */
-/* ==========================================================================
-   Posts
-   ========================================================================== */
-/* ==========================================================================
-   Footer
-   ========================================================================== */
+#nav-front-huge {
+  height: 275px;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  font-size: 38.5px;
+  font-weight: bold;
+}
+#nav-front-huge ul {
+  height: 100%;
+  list-style: none;
+}
+#nav-front-huge ul .menu-om-grisefesten:hover {
+  background-color: #0093DD;
+}
+#nav-front-huge ul .menu-kjop-billetter:hover {
+  background-color: #EB2C8F;
+}
+#nav-front-huge ul .menu-historie:hover {
+  background-color: yellow;
+}
+#nav-front-huge ul li {
+  background-color: white;
+  display: inline-block;
+  margin-left: 4px;
+  height: 275px;
+  width: 225px;
+  opacity: 0.7;
+  line-height: 40px;
+  border-bottom: 10px solid grey;
+}
+#nav-front-huge ul li:hover {
+  opacity: 0.8;
+  -webkit-transform: scale(1.1);
+}
+#nav-front-huge ul li a {
+  color: black;
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+#nav-front-huge ul li a span {
+  display: inline-block;
+  padding-top: 50%;
+}
+#nav-front-huge ul li a:hover {
+  text-decoration: none;
+}
+#content-info p {
+  display: inline-block;
+}
+#content-info #nav-footer {
+  padding-top: 34px;
+  display: inline-block;
+}
+#content-info #nav-footer ul {
+  list-style: none;
+}
+#content-info #nav-footer ul li {
+  padding-left: 4px;
+  display: inline-block;
+}
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by it's height */
+
+  margin: 0 auto -68px;
+  /* TODO background */
+
+}
+#push,
+#content-info {
+  height: 68px;
+}
 /* ==========================================================================
    WordPress Generated Classes
    See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
