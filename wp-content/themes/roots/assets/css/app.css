@@ -14,7 +14,7 @@ body {
   position: absolute;
   top: 25%;
   left: 25%;
-  font-size: 38.5px;
+  font-size: 30px;
   font-weight: bold;
 }
 #nav-front-huge ul {
@@ -33,11 +33,12 @@ body {
 #nav-front-huge ul li {
   background-color: white;
   display: inline-block;
-  margin-left: 4px;
+  margin-left: 10px;
+  margin-bottom: 10px;
   height: 275px;
   width: 225px;
   opacity: 0.7;
-  line-height: 40px;
+  line-height: 1;
   border-bottom: 10px solid grey;
 }
 #nav-front-huge ul li:hover {
