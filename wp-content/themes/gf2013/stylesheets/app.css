@@ -4847,10 +4847,11 @@ body h1, body h2, body h3, html h1, html h2, html h3 {
   padding-left: 1.5625em;
   padding-right: 1.5625em;
   min-height: 100px;
+  text-shadow: #121211 1px 1px 0;
 }
 
 #masthead {
-  padding-top: 0.3em;
+  padding-top: 0.01em;
 }
 
 .home #masthead {
