@@ -12,7 +12,6 @@
 		</div>
 		<?php endif; ?>
 		<header class="entry-header">
-			<?php the_post_thumbnail(); ?>
 			<?php if ( is_single() ) : ?>
 			<h1 class="entry-title"><?php the_title(); ?></h1>
 			<?php else : ?>
@@ -33,7 +32,7 @@
 			<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'gf2013' ), 'after' => '</div>' ) ); ?>
             </li>
             <li>
-bu
+                <?php the_post_thumbnail(); ?>
             </li>
 		</ul><!-- .entry-content -->
 		<?php endif; ?>
