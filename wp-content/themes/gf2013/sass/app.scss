@@ -1,0 +1,209 @@
+// Global Foundation Settings
+@import "settings";
+
+// Comment out this import if you are customizing you imports below
+@import "foundation";
+
+// Import specific parts of Foundation by commenting the import "foundation"
+// and uncommenting what you want below. You must uncomment the following if customizing
+
+// @import "foundation/foundation-global"; // *always required
+// @import "foundation/components/global"; // *always required
+// @import "foundation/components/grid";
+// @import "foundation/components/visibility";
+// @import "foundation/components/block-grid";
+// @import "foundation/components/type";
+// @import "foundation/components/buttons";
+// @import "foundation/components/forms"; // *requires components/buttons
+// @import "foundation/components/custom-forms"; // *requires components/buttons, components/forms
+// @import "foundation/components/button-groups"; // *requires components/buttons
+// @import "foundation/components/dropdown-buttons"; // *requires components/buttons
+// @import "foundation/components/split-buttons"; // *requires components/buttons
+// @import "foundation/components/flex-video";
+// @import "foundation/components/section";
+// @import "foundation/components/top-bar";  // *requires components/grid
+// @import "foundation/components/orbit";
+// @import "foundation/components/reveal";
+// @import "foundation/components/joyride";
+// @import "foundation/components/clearing";
+// @import "foundation/components/alert-boxes";
+// @import "foundation/components/breadcrumbs";
+// @import "foundation/components/keystrokes";
+// @import "foundation/components/labels";
+// @import "foundation/components/inline-lists";
+// @import "foundation/components/pagination";
+// @import "foundation/components/panels";
+// @import "foundation/components/pricing-tables";
+// @import "foundation/components/progress-bars";
+// @import "foundation/components/side-nav";
+// @import "foundation/components/sub-nav";
+// @import "foundation/components/switch";
+// @import "foundation/components/magellan";
+// @import "foundation/components/tables";
+// @import "foundation/components/thumbs";
+// @import "foundation/components/tooltips";
+// @import "foundation/components/dropdown";
+
+// My variables
+$grey: #2d2b29;
+$white: #f2efe5;
+// Fonts, 
+@import url(http://fonts.googleapis.com/css?family=Julius+Sans+One|Cinzel+Decorative|Josefin+Sans);
+$headerfont: "Julius Sans One";
+$bodyfont: "Josefin Sans";
+$prettyfont: "Cinzel Decorative";
+
+// Styling
+body,html {
+    height: 100%;
+
+    h1,h2,h3 {
+        letter-spacing: 0.1em;
+    }
+}
+.page-wrapper {
+    height: 100%;
+}
+#masthead {
+    /* hacky */
+    position: relative;
+    right: 1.6em;
+    width: 112%;
+    background-color: $body-bg;
+}
+#page {
+    margin-top: 50px;
+    background-color: $grey;
+
+    .site-title {
+        font-family: $headerfont;
+        font-size: 2em;
+        font-weight: normal;
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0.15em;
+        line-height: 1.1;
+
+        a {
+            color: $grey;
+        }
+    }
+    h1 {
+    }
+    @media only screen and (min-width: 48em) {
+        .site-title {
+            font-size: 4em;
+        }
+    }
+}
+.nav-wrapper {
+    height: 100%;
+    background-color: $grey;
+    text-align: center;
+
+    .date-mark {
+        margin-top: 50px;
+
+        img {
+            margin: 0.7em auto;
+        }
+        h3,h2 {
+            color: $white;
+            letter-spacing: 0.1em;
+        }
+        .date {
+            padding-top: 1em;
+        }
+        .name {
+            border-top: 1px solid $white;
+            border-bottom: 1px solid $white;
+            width: 85%;
+            margin: 0 auto;
+
+            h3 {
+                font-size: 1.7em;
+                font-family: $prettyfont;
+                font-weight: normal;
+                margin-top: 0.5em;
+                margin-bottom: 0.2em;
+                letter-spacing: 0.05em;
+            }
+        }
+        .time {
+            padding-bottom: 1em;
+            
+            h2 {
+                margin-bottom: 0;
+            }
+        }
+
+    }
+    #site-navigation {
+        margin: 2em auto;
+
+        .nav-menu {
+            list-style: none;
+
+            li {
+                width: 100%;
+                display: inline-block;
+
+                a {
+                    display: block;
+                    height: 50px;
+                    margin: 8px auto;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    line-height: 50px;
+                    width: 50%;
+                    background-color: $primary-color;
+                    color: white;
+                }
+            }
+        }
+        li.current_page_item {
+
+        }
+    }
+}
+#content {
+    .page {
+        padding-bottom: 1em;
+        padding-top: 1em;
+        .entry-content ul{
+            padding-left: 20px;
+        }
+
+    }
+}
+#colophon {
+    position: relative;
+    .site-info {
+        position: absolute;
+        top: -3em;
+        height: 3em;
+        line-height: 3em;
+        background-color: $grey;
+    }
+}
+.home #page {
+    padding-left: 0;
+    padding-right: 0;
+    background-image: url("../images/landingbilde.jpg");
+    min-height: 676px;
+}
+.front-page-caption {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba($grey, 0.92);
+    width: 33.3332%;
+    padding-top: 1em; 
+    padding-left: 1.5625em; 
+    padding-right: 1.5625em; 
+    min-height: 100px;
+}
+.home #masthead {
+    padding-left: 1.5625em; 
+    padding-right: 1.5625em; 
+}
