@@ -92,7 +92,7 @@ body,html {
     }
     @media only screen and (min-width: 48em) {
         .site-title {
-            font-size: 3.5em;
+            font-size: 3em;
         }
     }
 }
@@ -162,6 +162,7 @@ body,html {
                     width: 50%;
                     background-color: $primary-color;
                     color: white;
+                    font-style: italic;
                     //@include border-radius(2px);
                     @include box-shadow(darken($grey, 1%) 1px 1px 1px);
                     @include text-shadow(darken($primary-color, 5%) 1px 1px 0);
@@ -195,12 +196,6 @@ body,html {
         background-color: $grey;
     }
 }
-.home #page {
-    background-image: url("../images/landingbilde.jpg");
-    background-position: 1.5625em;
-    background-repeat: no-repeat;
-    min-height: 619px;
-}
 .front-page-caption {
     position: absolute;
     bottom: 0;
@@ -215,11 +210,24 @@ body,html {
 #masthead {
     padding-top: 0.01em; 
 }
-.home #masthead {
-    padding-top: 0;
+.home {
+    #masthead {
+        padding-top: 0;
+    }
+    #page {
+        background-image: url("../images/landingbilde.jpg");
+        #background-position: 1.5625em;
+        background-repeat: no-repeat;
+        min-height: 619px;
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 .lt-ie9 {
+    .front-page-caption {
+        background-color: $grey;
+    }
     .nav-wrapper {
         max-width: 240px;
     } 
