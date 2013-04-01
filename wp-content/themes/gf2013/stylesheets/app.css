@@ -4800,10 +4800,10 @@ body h1, body h2, body h3, html h1, html h2, html h3 {
   width: 50%;
   background-color: #e1842e;
   color: white;
-  -webkit-box-shadow: #2a2827 1px 1px 0;
-  -moz-box-shadow: #2a2827 1px 1px 0;
-  box-shadow: #2a2827 1px 1px 0;
-  text-shadow: #945215 1px 1px 0;
+  -webkit-box-shadow: #2a2827 1px 1px 1px;
+  -moz-box-shadow: #2a2827 1px 1px 1px;
+  box-shadow: #2a2827 1px 1px 1px;
+  text-shadow: #d7771f 1px 1px 0;
 }
 
 #content .page {
@@ -4846,7 +4846,7 @@ body h1, body h2, body h3, html h1, html h2, html h3 {
   padding-left: 1.5625em;
   padding-right: 1.5625em;
   min-height: 100px;
-  text-shadow: #121211 1px 1px 0;
+  text-shadow: #201e1d 1px 1px 0;
 }
 
 #masthead {
@@ -4855,4 +4855,11 @@ body h1, body h2, body h3, html h1, html h2, html h3 {
 
 .home #masthead {
   padding-top: 0;
+}
+
+.lt-ie9 .nav-wrapper {
+  max-width: 320px;
+}
+.lt-ie9 #page {
+  max-width: 960px;
 }

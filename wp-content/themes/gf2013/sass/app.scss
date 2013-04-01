@@ -163,8 +163,8 @@ body,html {
                     background-color: $primary-color;
                     color: white;
                     //@include border-radius(2px);
-                    @include box-shadow(darken($grey, 1%) 1px 1px 0);
-                    @include text-shadow(darken($primary-color, 20%) 1px 1px 0);
+                    @include box-shadow(darken($grey, 1%) 1px 1px 1px);
+                    @include text-shadow(darken($primary-color, 5%) 1px 1px 0);
                 }
             }
         }
@@ -210,11 +210,20 @@ body,html {
     padding-left: 1.5625em; 
     padding-right: 1.5625em; 
     min-height: 100px;
-    @include text-shadow(darken($grey, 10%) 1px 1px 0);
+    @include text-shadow(darken($grey, 5%) 1px 1px 0);
 }
 #masthead {
     padding-top: 0.01em; 
 }
 .home #masthead {
     padding-top: 0;
+}
+
+.lt-ie9 {
+    .nav-wrapper {
+        max-width: 320px;
+    } 
+    #page {
+        max-width: 960px;
+    }
 }
