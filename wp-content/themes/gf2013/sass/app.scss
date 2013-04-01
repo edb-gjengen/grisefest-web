@@ -92,7 +92,7 @@ body,html {
     }
     @media only screen and (min-width: 48em) {
         .site-title {
-            font-size: 4em;
+            font-size: 3.5em;
         }
     }
 }
@@ -221,9 +221,9 @@ body,html {
 
 .lt-ie9 {
     .nav-wrapper {
-        max-width: 320px;
+        max-width: 240px;
     } 
     #page {
-        max-width: 960px;
+        max-width: 910px;
     }
 }
