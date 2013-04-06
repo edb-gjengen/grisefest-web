@@ -6,11 +6,11 @@
 ?>
         </div><!-- #main .wrapper -->
     </div><!-- #page -->
-    <div class="nav-wrapper small-3 large-3 columns">
+    <div id="nav-wrapper" class="small-3 large-3 columns">
         <div class="date-mark">
             <img src="<?php echo get_template_directory_uri(); ?>/images/leaf_left.png" />
             <div class="date">
-                <h3>5.10.2013</h3>
+                <h2>5.10.2013</h2>
             </div>
             <div class="name">
                <h3>Gamle Logen</h3>
@@ -25,11 +25,12 @@
         </nav><!-- #site-navigation -->
     </div>
 </div>
-<!--<footer id="colophon" role="contentinfo" class="row">
-    <div class="site-info small-8 columns">
-        Webdesign: <a href="http://kak.studentersamfundet.no">KAK</a>
+<footer id="colophon" class="row">
+    <div class="site-info large-9 text-center columns">
+        <a href="http://uio.no"><img src="<?php echo get_template_directory_uri(); ?>/images/logo_uio.png" /></a>
+        <a href="http://akademika.no"><img src="<?php echo get_template_directory_uri(); ?>/images/logo_akademika.png" /></a>
     </div>
-</footer>-->
+</footer>
 
 
 <script src="<?php echo get_template_directory_uri(); ?>/javascripts/foundation/foundation.js"></script>
