@@ -285,7 +285,7 @@ body,html {
     }
     #nav-wrapper {
         width: 240px;
-        li.current_page_item a:before {
+        #site-navigation li.current_page_item a:before {
             right: 170px;
         }
     } 
