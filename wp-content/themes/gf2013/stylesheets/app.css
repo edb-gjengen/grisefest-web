@@ -4791,8 +4791,7 @@ html blockquote p {
 /* Navigation sidebar */
 #nav-wrapper {
   width: 300px;
-  height: 100%;
-  max-height: 806px;
+  height: 806px;
   background-color: #2d2b29;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
