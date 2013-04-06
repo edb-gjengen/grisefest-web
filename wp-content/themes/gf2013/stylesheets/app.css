@@ -4716,7 +4716,9 @@ body h2, html h2 {
 body p, html p {
   margin-bottom: 1em;
 }
-body blockquote, html blockquote {
+body blockquote,
+body blockquote p, html blockquote,
+html blockquote p {
   color: #f4d3b4;
 }
 
