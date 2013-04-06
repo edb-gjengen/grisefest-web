@@ -18,5 +18,6 @@ get_header();
         </div><!-- #content -->
     </div><!-- #primary -->
 <?
+get_sidebar();
 get_footer();
 ?>

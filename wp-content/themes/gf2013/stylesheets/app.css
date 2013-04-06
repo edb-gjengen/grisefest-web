@@ -4831,6 +4831,7 @@ html blockquote p {
 }
 #nav-wrapper .date-mark .time h2 {
   margin-bottom: 0;
+  letter-spacing: 0;
 }
 #nav-wrapper #site-navigation {
   margin: 2em auto;
