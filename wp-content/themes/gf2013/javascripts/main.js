@@ -1,3 +1,3 @@
 $(document).ready(function () {
-    $("#nav-wrapper").stick();
+    //$("#nav-wrapper").stick();
 });
