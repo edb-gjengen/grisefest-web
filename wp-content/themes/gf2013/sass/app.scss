@@ -285,6 +285,9 @@ body,html {
     }
     #nav-wrapper {
         width: 240px;
+        li.current_page_item a:before {
+            right: 170px;
+        }
     } 
     #page {
         width: 910px;

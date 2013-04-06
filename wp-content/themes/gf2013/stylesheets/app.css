@@ -4904,6 +4904,9 @@ html blockquote p {
 .lt-ie9 #nav-wrapper {
   width: 240px;
 }
+.lt-ie9 #nav-wrapper li.current_page_item a:before {
+  right: 170px;
+}
 .lt-ie9 #page {
   width: 910px;
 }
