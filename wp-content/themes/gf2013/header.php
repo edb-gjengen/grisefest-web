@@ -27,7 +27,7 @@
 
 <body <?php body_class(); ?>>
 <div class="page-wrapper row">
-<div id="page" class="hfeed site large-9 columns">
+<div id="page" class="hfeed site small-9 columns">
 	<header id="masthead" class="site-header" role="banner">
 		<hgroup>
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>

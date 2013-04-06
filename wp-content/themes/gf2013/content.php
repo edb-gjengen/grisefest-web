@@ -7,7 +7,7 @@
 
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
         <div class="row">
-            <div class="entry-wrap large-6 large-offset-6 columns">
+            <div class="entry-wrap small-6 small-offset-6 columns">
                 <?php if ( is_sticky() && is_home() && ! is_paged() ) : ?>
                 <div class="featured-post">
                     <?php _e( 'Featured post', 'gf2013' ); ?>
