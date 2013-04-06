@@ -4901,7 +4901,7 @@ html blockquote p {
 .lt-ie9 .home .entry-content {
   background-color: #2d2b29;
 }
-.lt-ie9 .nav-wrapper {
+.lt-ie9 #nav-wrapper {
   width: 240px;
 }
 .lt-ie9 #page {
