@@ -24,13 +24,14 @@
             <?php wp_nav_menu( array( 'theme_location' => 'primary-menu', 'menu_class' => 'nav-menu' ) ); ?>
         </nav><!-- #site-navigation -->
     </div>
+
+    <footer id="colophon" class="row">
+        <div class="site-info large-9 text-center columns">
+            <a href="http://uio.no"><img src="<?php echo get_template_directory_uri(); ?>/images/logo_uio.png" /></a>
+            <a href="http://akademika.no"><img src="<?php echo get_template_directory_uri(); ?>/images/logo_akademika.png" /></a>
+        </div>
+    </footer>
 </div>
-<footer id="colophon" class="row">
-    <div class="site-info large-9 text-center columns">
-        <a href="http://uio.no"><img src="<?php echo get_template_directory_uri(); ?>/images/logo_uio.png" /></a>
-        <a href="http://akademika.no"><img src="<?php echo get_template_directory_uri(); ?>/images/logo_akademika.png" /></a>
-    </div>
-</footer>
 
 
 <script src="<?php echo get_template_directory_uri(); ?>/javascripts/foundation/foundation.js"></script>
