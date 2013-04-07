@@ -260,9 +260,20 @@ body,html {
 /* Front page */
 .home {
     #content {
+        position: relative;
         .page {
             visibility: hidden;
         }
+    }
+    .front-page-badge {
+        background-image: url("../images/logo_dns_jubileum.png");
+        background-repeat: no-repeat;
+        visibility: visible;
+        position: absolute;
+        top: 0;
+        left: 1em;
+        width: 172px;
+        height: 234px;
     }
     .front-page-caption {
         visibility: visible;
